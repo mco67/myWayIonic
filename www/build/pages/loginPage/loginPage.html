@@ -1,0 +1,13 @@
+<ion-content padding class="loginPage">
+    <form (ngSubmit)="register()" [ngFormModel]="userForm">
+        <ion-list>
+            <ion-item>
+                <ion-input type="text" placeholder="Username" ngControl="username"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" placeholder="Password" ngControl="password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button type="submit">Register</button>
+    </form>
+</ion-content>
